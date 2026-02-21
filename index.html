@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="container">
+            
+        <div class ="screen active" id="start-screen">
+            <h1>Welcome to the Quiz!</h1>
+            <p>Test your knowledge with our fun and interactive quiz. Click the button below to get started!</p>
+            <button id="start-btn">Start Quiz</button>
+
+        </div>
+
+
+        <div class="screen" id="question-screen">
+            
+            <div class="quiz-header">
+                <h2 id="question-text">Question Text Here</h2>
+                <div class="quiz-info">
+                    <p>
+                        Question <span id="current-question">1</span> of 5
+                    </p>
+
+                    <p>
+                        Score: <span id="score">0</span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div id="answers container" class="answers-container">
+
+                <!--- Answer buttons will be inserted with js code at a undetermined time-->
+
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress" class="progress">
+                    <!--- Progress bar will be updated with js code at a undetermined time-->
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h1>Quiz Completed!</h1>
+            <div id="result-info">
+                <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+
+                <div id="result-message">
+                    Good Job! You have a good understanding of the material.
+                </div>
+
+            </div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+</body>
+</html>
